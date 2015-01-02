@@ -1,0 +1,6 @@
+- name: Install ruby through rbenv ruby manager
+  hosts: rails
+  remote_user: deploy
+  roles:
+    - rbenv
+

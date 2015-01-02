@@ -1,6 +1,6 @@
 ---
 - name: Configure App Servers
   hosts: appservers
-  user: deploy
+  remote_user: deploy
   roles:
     - app

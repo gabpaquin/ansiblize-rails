@@ -1,9 +1,10 @@
 ---
-- include: common.yml
+#- include: common.yml
 - include: common_rails.yml
+- include: ruby.yml
 - include: webservers.yml
 - include: appservers.yml
 - include: dbservers.yml
 - include: redisservers.yml
 - include: bgservers.yml
-- include: pubsubservers.yml
+#- include: pubsubservers.yml

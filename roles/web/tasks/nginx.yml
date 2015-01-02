@@ -3,6 +3,12 @@
   sudo: yes
   apt: name=nginx state=present
 
+- name: delete default vhost
+  sudo: yes
+  action: file path=/etc/nginx/sites-enabled/default state=absent
+  notify:
+  - restart nginx
+
 - name: setup nginx
   sudo: yes
   template: src=default.conf.j2 dest=/etc/nginx/sites-enabled/default.conf

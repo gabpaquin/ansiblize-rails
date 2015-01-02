@@ -1,6 +1,6 @@
 ---
 - name: Configure Web Servers
   hosts: webservers
-  user: deploy
+  remote_user: deploy
   roles:
     - web

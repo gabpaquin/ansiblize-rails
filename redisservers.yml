@@ -1,6 +1,6 @@
 ---
 - name: Configure Redis Servers
   hosts: redisservers
-  user: deploy
+  remote_user: deploy
   roles:
     - redis

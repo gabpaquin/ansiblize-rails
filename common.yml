@@ -1,6 +1,6 @@
 ---
 - name: Apply Common Configuration to all Nodes 
   hosts: all
-  user: deploy
+  remote_user: deploy
   roles: 
     - common

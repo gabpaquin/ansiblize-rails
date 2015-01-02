@@ -1,20 +1,20 @@
 [appservers]
-0.0.0.0
+121.41.77.201
 
 [webservers]
-0.0.0.0
+121.41.77.201
 
 [dbservers]
-0.0.0.0
+121.41.77.201
 
 [bgservers]
-0.0.0.0
+121.41.77.201
 
 [pubsubservers]
-0.0.0.0
+121.41.77.201
 
 [redisservers]
-0.0.0.0
+121.41.77.201
 
 [rails:children]
 appservers
