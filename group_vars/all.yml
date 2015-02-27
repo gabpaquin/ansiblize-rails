@@ -1,10 +1,10 @@
 ---
 # application name
-application: pincooler
+application: "{{ application_name }}_{{ rails_env }}"
 
 # Local setting for storing generated passwords, SSH key and project directory
 local_home: "{{ lookup('env', 'HOME') }}"
-local_project_directory: "{{ local_home }}/code/pincoolerbr"
+local_project_directory: "{{ local_home }}/code/urbantigers"
 local_ssh_key: "{{ local_home }}/.ssh/id_rsa.pub"
 
 # Paths on the remote servers

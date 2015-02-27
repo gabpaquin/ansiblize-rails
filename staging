@@ -1,25 +1,26 @@
 [appservers]
-121.41.77.201
+107.181.166.194
 
 [webservers]
-121.41.77.201
+107.181.166.194
 
 [dbservers]
-121.41.77.201
+107.181.166.194
 
 [bgservers]
-121.41.77.201
+107.181.166.194
 
 [pubsubservers]
-121.41.77.201
+107.181.166.194
 
 [redisservers]
-121.41.77.201
+107.181.166.194
 
 [rails:children]
 appservers
 bgservers
 pubsubservers
+webservers
 
 [rails:vars]
-rails_env=staging
+rails_env=production

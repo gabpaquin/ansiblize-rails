@@ -33,6 +33,7 @@
     line='eval "$(rbenv init -)"'
   tags: rbenv
 
+# not working
 - name: Copy .gemrc to ~/.gemrc
   sudo: yes
   sudo_user: "{{ rbenv_user }}"
@@ -70,6 +71,7 @@
   when: ruby_build_check_install|failed
   tags: rbenv
 
+  #not working
 - name: set default gems
   copy: src=default-gems dest={{ rbenv_root }}/default-gems
   sudo: yes
